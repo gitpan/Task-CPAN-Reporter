@@ -1,0 +1,37 @@
+---
+abstract: 'Install CPAN::Reporter and related dependencies'
+author:
+  - 'David Golden <dagolden@cpan.org>'
+build_requires:
+  File::Find: 0
+  File::Temp: 0
+  Test::More: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.200006, CPAN::Meta::Converter version 2.110930'
+license: apache
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Task-CPAN-Reporter
+no_index:
+  directory:
+    - t
+    - xt
+    - examples
+    - corpus
+  package:
+    - DB
+provides:
+  Task::CPAN::Reporter:
+    file: lib/Task/CPAN/Reporter.pm
+    version: 0.001
+requires:
+  CPAN::Reporter: 1.1902
+  LWP::Protocol::https: 6.02
+  Test::Reporter::Transport::Metabase: 1.999008
+  perl: 5.006
+resources:
+  bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Task-CPAN-Reporter
+version: 0.001
